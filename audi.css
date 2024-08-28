@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: georgia;
+}
+.audi{
+    height: 100vh;
+    width: 100%;
+    background-color: #081b29;
+} 
+.brand{
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+    padding: 15px;
+    display: inline-block;
+}
+#menu{
+    color: cyan;
+    text-shadow: 0px 0px 25px cyan;
+    font-size: 25px;
+    padding: 20px 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar h1, 
+.navbar i{
+    position: relative;
+    top: -100px;
+    animation: updown 1s forwards;
+}
+@keyframes updown {
+    from{
+        top: -100px;
+    }
+    to{
+        top: 0px;
+    }
+}
+li, li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+li a{
+    border-bottom: 0.1px solid white;
+    width: 130px;
+    padding-top: 1px;
+    padding-bottom: 18px;
+}
+.close i{
+    font-size: 30px;
+    color: cyan;
+    position: relative;
+    left: 0px;
+}
+.sider{ 
+    position: fixed; 
+    right: -200px;
+    top: 0;
+    height: 100vh;
+    width: 170px;
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    z-index: 5;
+    animation: bar 0.3s forwards;
+    box-shadow: 25px 25px 25px 25px black;
+} 
+@keyframes bar {
+    from{
+        right: -200px;
+    }
+    to{
+        right: 0px;
+    }
+}
+.sider li i{
+    color: cyan;
+    font-size: 32px;
+    position: relative;
+    right: 60px;
+    transition: transform 0.5s ease-in-out;
+}
+.sider li i:hover{
+    transform: scale(1.2);
+}
+li a:hover{
+    color: cyan; 
+    text-shadow: 0px 0px 5px cyan;
+} 
+ul li i{
+    font-size: 25px;
+    padding-left: 120px;
+    padding-top: 10px;
+} 
+h2{
+    padding: 20px 20px;
+    color: white;
+}
+.logo{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 30px;
+    left: -330px;
+    z-index: 1;
+    animation: slidein 1s forwards;
+    filter: drop-shadow(0px 0px 15px red);
+}  
+@keyframes slidein {
+    from {
+        left: -330px;
+    }
+    to {
+        left: 30px;
+    }
+}
+.hero{
+    width: 350px;
+    height: 135px;
+    position: relative;
+    bottom: 135px;
+    z-index: 2;
+    right: -350px;
+    animation: slideout 1s forwards;
+    filter:  (0px 0px 15px black);
+} 
+@keyframes slideout {
+    from{
+        right: -350px;
+    }
+    to{
+        right: 0px;
+    }
+}
+.article{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+.light{
+    display: inline;
+    color: cyan;
+    letter-spacing: 1px;
+}
+.magic button{
+    background-color: cyan;
+    color: #081b29;
+    padding: 10px 40px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px cyan;
+} 
+.magic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    bottom: 500px;
+    animation: up 0.5s forwards;
+}
+@keyframes up {
+    from{
+        bottom: 500px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+.magic button:hover{
+    box-shadow: 0px 0px 15px cyan;
+}
